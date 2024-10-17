@@ -3,24 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pitcture</title>
+    <title>Picture</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,700&family=Montserrat:ital,wght@0,500;1,500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <main class="main">
-      <picture> </picture>
-      <h3>PERFUME</h3>
-      <h2>Gabrielle Essence Eau De Parfum</h2>
-      <p>
-        A floral, solar and voluptuous interpretation composed by Olivier Polge,
-        Perfumer-Creator for the House of CHANEL.
-      </p>
-      <div class="boxprice">
-        <h2 class="price">$149.99 <span>$169.99</span></h2>
-      </div>
-      <div class="cta">
-        <img src="assets/images/icon-cart.svg" alt="Icono carrito de compra" />
-        <h2>Add to Cart</h2>
+      <picture>
+        <source
+          media="(min-width:768px)"
+          srcset="assets/images/image-product-desktop.jpg"
+        />
+        <source
+          media="(min-width: 360px)"
+          srcset="assets/images/image-product-mobile.jpg"
+        />
+
+        <img
+          class="product"
+          src="assets/images/image-product-mobile.jpg"
+          alt="Imagen del bote de perfume Gabrielle de Chanel "
+        />
+      </picture>
+      <div class="content">
+        <h3 class="subtitle">PERFUME</h3>
+        <h2 class="title">Gabrielle Essence Eau De Parfum</h2>
+        <p class="text">
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+        <div class="boxprice">
+          <h2 class="price">$149.99</h2>
+          <h2 class="price2">$169.99</h2>
+        </div>
+        <div class="cta">
+          <img
+            src="assets/images/icon-cart.svg"
+            alt="Icono carrito de compra"
+          />
+          <h2 class="buy">Add to Cart</h2>
+        </div>
       </div>
     </main>
   </body>
